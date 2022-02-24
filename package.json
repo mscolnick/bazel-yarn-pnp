@@ -1,0 +1,4 @@
+{
+  "name": "bazel_pnp",
+  "packageManager": "yarn@3.2.0"
+}
