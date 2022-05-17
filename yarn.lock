@@ -5,10 +5,10 @@ __metadata:
   version: 6
   cacheKey: 8
 
-"@faker-js/faker@npm:^6.0.0-alpha.7":
-  version: 6.0.0-alpha.7
-  resolution: "@faker-js/faker@npm:6.0.0-alpha.7"
-  checksum: 1322aa3b8c5975fdd7cf826caecde71708bb73d21b3cbcf8dca8ba451398857f3d8c0946b65d5b0927bfddc9b9d71353ce3531264ad9a570948452053ee57f0c
+"@faker-js/faker@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "@faker-js/faker@npm:6.1.2"
+  checksum: 953d0301f71e264330a2aa1e04ae4ecd8c7af5276ce932f92138923d3ef2cc69354a879a7d232805066728e6c65d1021a3f20a72b9b4c49d0ee880db9fcecada
   languageName: node
   linkType: hard
 
@@ -16,14 +16,42 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bazel_pnp@workspace:."
   dependencies:
-    "@faker-js/faker": ^6.0.0-alpha.7
+    "@faker-js/faker": ^6.1.2
     lodash: ^4.17.21
+    react: ^18.0.0
   languageName: unknown
   linkType: soft
+
+"js-tokens@npm:^3.0.0 || ^4.0.0":
+  version: 4.0.0
+  resolution: "js-tokens@npm:4.0.0"
+  checksum: 8a95213a5a77deb6cbe94d86340e8d9ace2b93bc367790b260101d2f36a2eaf4e4e22d9fa9cf459b38af3a32fb4190e638024cf82ec95ef708680e405ea7cc78
+  languageName: node
+  linkType: hard
 
 "lodash@npm:^4.17.21":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
+  languageName: node
+  linkType: hard
+
+"loose-envify@npm:^1.1.0":
+  version: 1.4.0
+  resolution: "loose-envify@npm:1.4.0"
+  dependencies:
+    js-tokens: ^3.0.0 || ^4.0.0
+  bin:
+    loose-envify: cli.js
+  checksum: 6517e24e0cad87ec9888f500c5b5947032cdfe6ef65e1c1936a0c48a524b81e65542c9c3edc91c97d5bddc806ee2a985dbc79be89215d613b1de5db6d1cfe6f4
+  languageName: node
+  linkType: hard
+
+"react@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "react@npm:18.0.0"
+  dependencies:
+    loose-envify: ^1.1.0
+  checksum: 293020b96536b3c7113ee57ca5c990a3f25649d1751b1c7a3aabd16dff0691fe9f1eed1206616d0906d05933536052037340a0c8d0941ff870b0eb469a2f975b
   languageName: node
   linkType: hard

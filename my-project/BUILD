@@ -1,4 +1,5 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+load("//libs/bazel:rules_node.bzl", "custom_nodejs_binary")
 load("@bazel_skylib//rules:write_file.bzl", "write_file")
 
 # This works because Bazel is copying npm deps
@@ -27,6 +28,7 @@ nodejs_binary(
 # from the deps + global yarn.lock.
 # This will prevent yarn from duplicate downloads and fs hits by
 # copying to the sandbox.
+# Packages are required to be downloaded first.
 nodejs_binary(
     name = "run3",
     data = ["//:.pnp.cjs"],
@@ -49,5 +51,16 @@ nodejs_binary(
     env = {
         "NODE_OPTIONS": "--require=$(rootpath //:.pnp.cjs)",
     },
+    entry_point = "generate-names.js",
+)
+
+# This installs packages just-in-time.
+custom_nodejs_binary(
+    name = "run5",
+    # data is required but wont be downloaded by bazel, and instead with will downloaded by yarn2.
+    data = [
+        "@npm//@faker-js/faker",
+        "@npm//lodash",
+    ],
     entry_point = "generate-names.js",
 )

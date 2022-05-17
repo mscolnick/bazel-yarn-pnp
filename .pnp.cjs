@@ -33,17 +33,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["@faker-js/faker", "npm:6.0.0-alpha.7"],\
-            ["lodash", "npm:4.17.21"]\
+            ["@faker-js/faker", "npm:6.1.2"],\
+            ["lodash", "npm:4.17.21"],\
+            ["react", "npm:18.0.0"]\
           ],\
           "linkType": "SOFT"\
         }]\
       ]],\
       ["@faker-js/faker", [\
-        ["npm:6.0.0-alpha.7", {\
-          "packageLocation": "./.yarn/cache/@faker-js-faker-npm-6.0.0-alpha.7-f615b6dd2f-1322aa3b8c.zip/node_modules/@faker-js/faker/",\
+        ["npm:6.1.2", {\
+          "packageLocation": "./.yarn/cache/@faker-js-faker-npm-6.1.2-67f6ec3cbb-953d0301f7.zip/node_modules/@faker-js/faker/",\
           "packageDependencies": [\
-            ["@faker-js/faker", "npm:6.0.0-alpha.7"]\
+            ["@faker-js/faker", "npm:6.1.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -53,10 +54,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["bazel_pnp", "workspace:."],\
-            ["@faker-js/faker", "npm:6.0.0-alpha.7"],\
-            ["lodash", "npm:4.17.21"]\
+            ["@faker-js/faker", "npm:6.1.2"],\
+            ["lodash", "npm:4.17.21"],\
+            ["react", "npm:18.0.0"]\
           ],\
           "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["js-tokens", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/js-tokens-npm-4.0.0-0ac852e9e2-8a95213a5a.zip/node_modules/js-tokens/",\
+          "packageDependencies": [\
+            ["js-tokens", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["lodash", [\
@@ -64,6 +75,26 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",\
           "packageDependencies": [\
             ["lodash", "npm:4.17.21"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["loose-envify", [\
+        ["npm:1.4.0", {\
+          "packageLocation": "./.yarn/cache/loose-envify-npm-1.4.0-6307b72ccf-6517e24e0c.zip/node_modules/loose-envify/",\
+          "packageDependencies": [\
+            ["loose-envify", "npm:1.4.0"],\
+            ["js-tokens", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["react", [\
+        ["npm:18.0.0", {\
+          "packageLocation": "./.yarn/cache/react-npm-18.0.0-fdbcb4c477-293020b965.zip/node_modules/react/",\
+          "packageDependencies": [\
+            ["react", "npm:18.0.0"],\
+            ["loose-envify", "npm:1.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\

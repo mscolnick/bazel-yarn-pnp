@@ -1,8 +1,17 @@
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
 # Add rules here to build your software
 # See https://docs.bazel.build/versions/main/build-ref.html#BUILD_files
 
-
-
 exports_files([
   '.pnp.cjs',
+  '.yarn/releases/yarn-3.2.0.cjs',
 ])
+
+nodejs_binary(
+  name = "yarnbin",
+  data = [
+    '.pnp.cjs',
+  ],
+  entry_point = ".yarn/releases/yarn-3.2.0.cjs",
+  visibility = ['//visibility:public'],
+)

@@ -1,4 +1,9 @@
 {
   "name": "bazel_pnp",
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "@faker-js/faker": "^6.1.2",
+    "lodash": "^4.17.21",
+    "react": "^18.0.0"
+  }
 }
